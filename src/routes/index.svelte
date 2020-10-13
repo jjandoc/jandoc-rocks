@@ -1,7 +1,10 @@
 <style>
-  :global(.main-content) {
-    background-image: none;
+  :global(.main-content.home) {
     padding: 0;
+  }
+
+  :global(.main-content.home::after) {
+    display: none;
   }
 
   h1 {
