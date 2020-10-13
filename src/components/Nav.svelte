@@ -11,9 +11,13 @@
 <style>
   nav {
     align-items: center;
+    background: var(--color-peach);
     border-bottom: 1px solid rgba(255, 62, 0, 0.1);
     display: flex;
     padding: 0 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
   }
 
   ul {
