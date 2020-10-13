@@ -14,6 +14,7 @@
     background: var(--color-peach);
     border-bottom: 1px solid rgba(255, 62, 0, 0.1);
     display: flex;
+    flex-shrink: 0;
     padding: 0 1rem;
     position: sticky;
     top: 0;

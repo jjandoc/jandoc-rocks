@@ -1,5 +1,5 @@
 :root {
-  --color-peach: #f5c3cc;
+  --color-peach: rgb(245, 195, 204);
   --font-body: Raleway, Helvetica Neue, sans-serif;
   --font-heading: 'Bevan', serif;
 }
