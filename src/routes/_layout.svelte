@@ -19,6 +19,7 @@
     content: '';
     display: block;
     height: 0;
+    margin-top: auto;
     padding-bottom: 100%;
     width: 100%;
   }
