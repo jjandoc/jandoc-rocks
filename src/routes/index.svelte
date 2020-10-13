@@ -15,10 +15,10 @@
 
   .me {
     font-size: clamp(3rem, 0.75rem + 10vw, 6rem);
-    font-family: var(--font-heading);
   }
 
   .my-shizz {
+    font-family: var(--font-body);
     font-size: clamp(0.75rem, 0.1875rem + 2.5vw, 1.5rem);
   }
 
