@@ -5,12 +5,6 @@
 </script>
 
 <style>
-  .container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-
   main {
     align-items: flex-start;
     display: flex;
@@ -19,10 +13,8 @@
   }
 </style>
 
-<div class="container">
-  <Nav {segment} />
+<Nav {segment} />
 
-  <main id="#main" class="main-content">
-    <slot />
-  </main>
-</div>
+<main id="#main" class="main-content">
+  <slot />
+</main>

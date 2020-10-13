@@ -8,6 +8,17 @@
   box-sizing: border-box;
 }
 
+html,
+body,
+#sapper {
+  height: 100%;
+}
+
+#sapper {
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   background-color: var(--color-peach);
   margin: 0;
