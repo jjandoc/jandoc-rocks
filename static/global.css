@@ -1,0 +1,54 @@
+:root {
+  --color-peach: #f5c3cc;
+  --font-body: Raleway, Helvetica Neue, sans-serif;
+  --font-heading: 'Bevan', cursive;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-peach);
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+a {
+  color: inherit;
+}
+
+code {
+  font-family: menlo, inconsolata, monospace;
+  font-size: calc(1em - 2px);
+  color: #555;
+  background-color: #f0f0f0;
+  padding: 0.2em 0.4em;
+  border-radius: 2px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
