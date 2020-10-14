@@ -3,6 +3,7 @@ layout: blog
 title: HTML Kitchen Sink
 date: 2020-10-14T06:48:17.144Z
 ---
+
 <!-- HTML5 Kitchen sink by @dbox -->
 
 <main>
@@ -177,72 +178,4 @@ pre {
 </main>
 
 <!-- end kitchen sink -->
-
-<!-- framework toggles -->
-
-<div style="position: fixed; top: 0; right: 0; padding: 25px 25px; background: #eee;"><small>Toggle reset/framework:</small><br><br>
-
-  <div>
-    <label>
-     <input type="radio" name="options" id="browser-default" value="option1" href="#" onclick="swapStyleSheet('default.css')"> browser-default
-  </label></div>
-  <div>
-    <label>
-     <input type="radio" name="options" id="normalize" value="option2" href="#" onclick="swapStyleSheet('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css')"> meyer reset
-  </label></div>
-  <div>
-    <label>
-     <input type="radio" name="options" id="normalize" value="option3" href="#" 
-     onclick="swapStyleSheet('https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css')"> normalize
-  </label></div>
-  <div>
-    <label>
-     <input type="radio" name="options" id="sanitze" value="option4" href="#" onclick="swapStyleSheet('https://dl.dropboxusercontent.com/u/18590/sanitize.css')" checked> sanitize
-  </label></div>
-  <div>
-    <label>
-     <input type="radio" name="options" id="sanitze" value="option4" href="#" onclick="swapStyleSheet('https://dl.dropboxusercontent.com/u/18590/reeeset.css')" > reeeset
-  </label></div>
-  <div>
-    <label>
-     <input type="radio" name="options" id="bootstrap" value="option5" href="#" 
-     onclick="swapStyleSheet('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')"> bootstrap
-  </label></div>
-  
-  <div>
-    <label>
-     <input type="radio" name="options" id="reboot" value="option6" href="#" 
-     onclick="swapStyleSheet('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap-reboot.css')"> reboot
-  </label></div>  
-  <div>
-    <label>
-     <input type="radio" name="options" id="semantic-ui" value="option7" href="#" onclick="swapStyleSheet('https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.css')"> semantic-ui
-  </label>
-    
-  </div>
-  
-  <div>
-    <label>
-     <input type="radio" name="options" id="foundation" value="option8" href="#"onclick="swapStyleSheet('http:// cdn.foundation5.zurb.com/foundation.css')"> foundation
-  </label>
-  </div>
-  
-  <div>
-    <label>
-     <input type="radio" name="options" id="mini-reset" value="option8" href="#"onclick="swapStyleSheet('https://cdn.bootcss.com/minireset.css/0.0.2/minireset.css')"> minireset
-  </label>
-  </div> 
-  
-  <div>
-    <label>
-     <input type="radio" name="options" id="modern-normalize" value="option8" href="#"onclick="swapStyleSheet('https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/modern-normalize.css')"> modern-normalize
-  </label>
-  </div> 
-  
-  <div>
-    <label>
-     <input type="radio" name="options" id="css-remedy" value="option8" href="#"onclick="swapStyleSheet('https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/remedy.css')"> CSS Remedy
-  </label>
-  </div> 
-
 </div>

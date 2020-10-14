@@ -1,11 +1,12 @@
 <script context="module">
-  export async function preload({ params, query }) {
+  export async function preload({ params }) {
     // the `slug` parameter is available because
     // this file is called [slug].svelte
-    const res = await this.fetch(`_posts/${params.slug}.md`);
+    const res = await this.fetch(`blog/${params.slug}.json`);
+    const data = await res.json();
 
     if (res.status === 200) {
-      return { postMd: await res.text() };
+      return { post: data };
     } else {
       this.error(res.status, data.message);
     }
@@ -56,8 +57,12 @@
   <title>{post.title}</title>
 </svelte:head>
 
-<h1>{post.title}</h1>
+<article>
+  <header>
+    <h1>{post.title}</h1>
+  </header>
 
-<div class="content">
-  {@html post.html}
-</div>
+  <div class="content">
+    {@html post.html}
+  </div>
+</article>
