@@ -2,6 +2,7 @@
 layout: blog
 title: HTML Kitchen Sink
 date: 2020-10-14T06:48:17.144Z
+description: Lorem ipsum dolor sit amet
 ---
 
 <!-- HTML5 Kitchen sink by @dbox -->

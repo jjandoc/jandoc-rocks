@@ -24,7 +24,7 @@ export function get(req, res, _) {
       'Content-Type': 'application/json',
     });
 
-    res.end(JSON.stringify({ html, ...data }));
+    res.end(JSON.stringify({ html, ...data, slug }));
   } else {
     res.writeHead(404, {
       'Content-Type': 'application/json',
