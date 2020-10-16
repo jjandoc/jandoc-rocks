@@ -6,7 +6,6 @@ media_folder: static/uploads # Media files will be stored in the repo under stat
 public_folder: /uploads # The src attribute for uploaded media will begin with /images/uploads
 media_library:
   name: cloudinary
-  output_filename_only: true
   config:
     cloud_name: de8ovkdiy
     api_key: 288161866876334
