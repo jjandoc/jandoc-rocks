@@ -9,6 +9,7 @@
 </script>
 
 <script>
+  import InternalLayout from '../../components/InternalLayout.svelte';
   import TalkPreview from '../../components/TalkPreview.svelte';
   import sortByDate from '../../util/sortByDate';
 
@@ -32,16 +33,18 @@
   <title>Talks</title>
 </svelte:head>
 
-<article>
-  <header>
-    <h1 class="page-title">Recent talks</h1>
-  </header>
+<InternalLayout>
+  <article>
+    <header>
+      <h1 class="page-title">Recent talks</h1>
+    </header>
 
-  <ul>
-    {#each sortedPosts as post}
-      <li>
-        <TalkPreview {...post} />
-      </li>
-    {/each}
-  </ul>
-</article>
+    <ul>
+      {#each sortedPosts as post}
+        <li>
+          <TalkPreview {...post} />
+        </li>
+      {/each}
+    </ul>
+  </article>
+</InternalLayout>

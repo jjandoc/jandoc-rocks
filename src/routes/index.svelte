@@ -18,14 +18,6 @@
 </script>
 
 <style>
-  :global(.main-content.home) {
-    padding: 0;
-  }
-
-  :global(.main-content.home::after) {
-    display: none;
-  }
-
   h1 {
     margin: auto;
     padding: 2rem 0 0;
