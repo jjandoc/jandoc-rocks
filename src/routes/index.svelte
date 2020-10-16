@@ -1,5 +1,6 @@
 <script>
   import { onMount } from 'svelte';
+  import Cloudinary from '../services/Cloudinary';
 
   onMount(() => {
     if (window.netlifyIdentity) {
@@ -12,6 +13,8 @@
       });
     }
   });
+
+  const imgUrl = Cloudinary.getUploadedImage('full-frontal_z21746.jpg');
 </script>
 
 <style>
@@ -59,4 +62,4 @@
   </div>
 </h1>
 
-<img alt="It me!" src="/img/full-frontal.jpg" />
+<img alt="It me!" src={imgUrl} />

@@ -15,7 +15,8 @@
 
   main::after {
     align-self: flex-end;
-    background: url('/img/tragic-kingdom.jpg') bottom right/contain no-repeat;
+    background: url('https://res.cloudinary.com/de8ovkdiy/image/upload/f_auto,q_auto,c_scale,w_750/tragic-kingdom_riapvp.jpg')
+      bottom right/contain no-repeat;
     content: '';
     display: block;
     height: 0;
@@ -30,6 +31,7 @@
       padding-right: clamp(300px, 33%, 1000px);
     }
     main::after {
+      background-image: url('https://res.cloudinary.com/de8ovkdiy/image/upload/f_auto,q_auto,c_scale,w_1000/tragic-kingdom_riapvp.jpg');
       bottom: 0;
       position: fixed;
       right: 0;
