@@ -5,8 +5,8 @@
 <article>
   <h1>About Me</h1>
   <p>
-    I'm Jon Jandoc, a front-end engineer in Los Angeles. I build internet stuff
-    for causes that I give a damn about. My work has been used to
+    I'm Jon Jandoc, a front-end engineer and architect in Los Angeles. I build
+    internet stuff for causes that I give a damn about. My work has been used to
     <a href="https://www.jdate.com">help people find love</a>,
     <a href="http://freedomtomarry.org/">fight for marriage equality</a>,
     <a href="https://www.malarianomore.org/">relieve malaria</a>,
