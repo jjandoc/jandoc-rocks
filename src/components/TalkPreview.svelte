@@ -6,6 +6,8 @@
   export let title;
   export let html;
   export let date;
+  export let venue;
+  export let venueUrl;
   export let url;
   export let thumbnail;
 
@@ -43,8 +45,9 @@
     font-weight: bold;
   }
 
-  time {
-    font-size: 0.75rem;
+  .talk-preview__dateline {
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
   }
 
   .talk-preview__description {
@@ -69,7 +72,14 @@
       alt="" /></a>
   <div class="talk-preview__content">
     <h2><a href={url}>{title}</a></h2>
-    {#if formattedDate}<time>{formattedDate}</time>{/if}
+    <div class="talk-preview__dateline">
+      {#if formattedDate}<time>{formattedDate}</time>{/if}
+      {#if venue}
+        {#if venueUrl}
+          <a href={venueUrl}>@ {venue}</a>
+        {:else}<span>@ {venue}</span>{/if}
+      {/if}
+    </div>
     <div class="talk-preview__description">
       {@html html}
     </div>
