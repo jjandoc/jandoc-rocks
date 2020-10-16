@@ -3,7 +3,7 @@
 </svelte:head>
 
 <article>
-  <h1>About Me</h1>
+  <h1 class="page-title">About Me</h1>
   <p>
     I'm Jon Jandoc, a front-end engineer and architect in Los Angeles. I build
     internet stuff for causes that I give a damn about. My work has been used to

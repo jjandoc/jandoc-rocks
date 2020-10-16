@@ -9,7 +9,10 @@
 </script>
 
 <script>
+  import sortByDate from '../../util/sortByDate';
+
   export let posts;
+  $: sortedPosts = sortByDate(posts);
 </script>
 
 <style>
@@ -25,7 +28,7 @@
 
 <article>
   <header>
-    <h1>Recent posts</h1>
+    <h1 class="page-title">Recent posts</h1>
   </header>
 
   <ul>

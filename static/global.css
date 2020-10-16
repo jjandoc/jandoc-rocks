@@ -40,6 +40,11 @@ h6 {
   line-height: 1.2;
 }
 
+.page-title {
+  font-size: clamp(2rem, 1.25rem + 3.3333vw, 3rem);
+  margin-bottom: 2rem;
+}
+
 a {
   color: inherit;
 }
