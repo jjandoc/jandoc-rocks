@@ -18,6 +18,11 @@
 </script>
 
 <style>
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
   h1 {
     margin: auto;
     padding: 2rem 0 0;
@@ -45,7 +50,7 @@
   <title>Jon Jandoc Rocks!</title>
 </svelte:head>
 
-<div>
+<div class="home-container">
   <h1>
     <div class="me">Jon Jandoc</div>
     <div class="my-shizz">
@@ -54,7 +59,6 @@
   </h1>
 
   <img alt="It me!" src={imgUrl} />
-
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js">
   </script>
 </div>
