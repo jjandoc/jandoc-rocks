@@ -9,6 +9,7 @@
 </script>
 
 <script>
+  import InternalLayout from '../../components/InternalLayout.svelte';
   import sortByDate from '../../util/sortByDate';
 
   export let posts;
@@ -26,21 +27,23 @@
   <title>Blog</title>
 </svelte:head>
 
-<article>
-  <header>
-    <h1 class="page-title">Recent posts</h1>
-  </header>
+<InternalLayout>
+  <article>
+    <header>
+      <h1 class="page-title">Recent posts</h1>
+    </header>
 
-  <ul>
-    {#each posts as post}
-      <!-- we're using the non-standard `rel=prefetch` attribute to
-				tell Sapper to load the data for the page as soon as
-				the user hovers over the link or taps it, instead of
-				waiting for the 'click' event -->
-      <li>
-				<h2><a rel="prefetch" href="blog/{post.slug}">{post.title}</a></h2>
-				<p>{post.description}</p>
-			</li>
-    {/each}
-  </ul>
-</article>
+    <ul>
+      {#each posts as post}
+        <!-- we're using the non-standard `rel=prefetch` attribute to
+          tell Sapper to load the data for the page as soon as
+          the user hovers over the link or taps it, instead of
+          waiting for the 'click' event -->
+        <li>
+          <h2><a rel="prefetch" href="blog/{post.slug}">{post.title}</a></h2>
+          <p>{post.description}</p>
+        </li>
+      {/each}
+    </ul>
+  </article>
+</InternalLayout>

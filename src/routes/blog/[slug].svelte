@@ -14,6 +14,7 @@
 </script>
 
 <script>
+  import InternalLayout from '../../components/InternalLayout.svelte';
   export let post;
 </script>
 
@@ -32,10 +33,10 @@
   }
 
   .content :global(pre) {
-    background-color: #f9f9f9;
-    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.05);
-    padding: 0.5em;
-    border-radius: 2px;
+    background-color: #333;
+    color: #42b663;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
     overflow-x: auto;
   }
 
@@ -57,12 +58,14 @@
   <title>{post.title}</title>
 </svelte:head>
 
-<article>
-  <header>
-    <h1>{post.title}</h1>
-  </header>
+<InternalLayout>
+  <article>
+    <header>
+      <h1>{post.title}</h1>
+    </header>
 
-  <div class="content">
-    {@html post.html}
-  </div>
-</article>
+    <div class="content">
+      {@html post.html}
+    </div>
+  </article>
+</InternalLayout>

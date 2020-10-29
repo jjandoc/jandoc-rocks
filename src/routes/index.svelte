@@ -43,15 +43,18 @@
 
 <svelte:head>
   <title>Jon Jandoc Rocks!</title>
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js">
-  </script>
 </svelte:head>
 
-<h1>
-  <div class="me">Jon Jandoc</div>
-  <div class="my-shizz">
-    Front-End Dev. Pixel Wrangler. Tragically Caffeinated.
-  </div>
-</h1>
+<div>
+  <h1>
+    <div class="me">Jon Jandoc</div>
+    <div class="my-shizz">
+      Front-End Dev. Pixel Wrangler. Tragically Caffeinated.
+    </div>
+  </h1>
 
-<img alt="It me!" src={imgUrl} />
+  <img alt="It me!" src={imgUrl} />
+
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js">
+  </script>
+</div>
