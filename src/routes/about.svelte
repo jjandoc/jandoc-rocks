@@ -28,7 +28,7 @@
       is also my jam.
     </p>
     <p>
-      Currently I'm the Principal UI Engineer at
+      Currently I'm a UI Engineer at
       <a href="https://www.dotorg.io/">dotOrg Technology</a>. I help organize
       the <a href="https://www.vuejsla.com/">local Vue.js meetups</a>
       and otherwise try my best to be engaged with the dev community.
