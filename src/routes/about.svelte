@@ -1,5 +1,5 @@
 <script>
-  import InternalLayout from '../components/InternalLayout.svelte';
+  import InternalLayout from "../components/InternalLayout.svelte";
 </script>
 
 <svelte:head>
@@ -29,8 +29,8 @@
     </p>
     <p>
       Currently I'm the Principal UI Engineer at
-      <a href="https://www.bambee.com/">Bambee</a>. I help organize the
-      <a href="https://www.vuejsla.com/">local Vue.js meetups</a>
+      <a href="https://www.dotorg.io/">dotOrg Technology</a>. I help organize
+      the <a href="https://www.vuejsla.com/">local Vue.js meetups</a>
       and otherwise try my best to be engaged with the dev community.
     </p>
     <p>I've been meaning to blog more.</p>
